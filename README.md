@@ -31,6 +31,7 @@
 * 描述 : 新增一筆學生資料。
 
 (請求參數)
+```typescript
 * Body :
 {
     "userName": "tkuim1234",
@@ -40,6 +41,7 @@
     "class": "g",
     "Email": "min@gmail.com"
 }
+```
 
 (回應)
 * 成功 : 
@@ -58,25 +60,31 @@
         "__v": 0
     }
 }
+```
 
 * 失敗 : 
+```typescript
 {
   "code": 403,
   "message": ""
 }
+```
 
 #### 刪除學生資料(Delete)
 * DELETE 方法
 * 根據帳號刪除學生資料。
 
 (請求參數)
+```typescript
 * Body :
 {
   "userName": "tkuim1234"
 }
+```
 
 (回應)
 * 成功 : 
+```typescript
 {
   "code": 200,
   "message": "刪除成功",
@@ -84,13 +92,15 @@
     "userName": "tkuim1234"
   }
 }
+```
 
 * 失敗 : 
+```typescript
 {
   "code": 400,
   "message": "用戶名是必需的"
 }
-
+```
 
 #### 更新學生資料(Update)
 * PUT 方法
@@ -98,13 +108,16 @@
 
 (請求參數)
 * Body :
+```typescript
 {
   "userName": "tkuim1234",
   "name": "王大明"
 }
+```
 
 (回應)
 * 成功 : 
+```typescript
 {
   "code": 200,
   "message": "更新成功",
@@ -113,12 +126,15 @@
     "name": "王大明"
   }
 }
+```
 
 * 失敗 : 
+```typescript
 {
   "code": 400,
   "message": "userName 和 name 是必需的參數"
 }
+```
 
 ### 架構圖 : 展示前端、後端、資料庫及其互動
 ![架構圖](image.png)
