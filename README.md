@@ -31,8 +31,8 @@
 * 描述 : 新增一筆學生資料。
 
 (請求參數)
-```typescript
 * Body :
+```typescript
 {
     "userName": "tkuim1234",
     "name": "王大明",
@@ -75,8 +75,8 @@
 * 根據帳號刪除學生資料。
 
 (請求參數)
-```typescript
 * Body :
+```typescript
 {
   "userName": "tkuim1234"
 }
