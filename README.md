@@ -43,6 +43,7 @@
 
 (回應)
 * 成功 : 
+```typescript
 {
     "code": 200,
     "message": "",
